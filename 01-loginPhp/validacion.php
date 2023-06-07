@@ -14,6 +14,7 @@
         if($usuario == $usuarioDef && $pass == $passDef){
             echo "Ingreso correcto.";
             session_start();
+            header("Location:HomeIntranet.php");
         }
         else{
             echo "Datos no coinciden.";
@@ -24,9 +25,3 @@
 
     
     ?>
-
-
-
-<?php
-//session_start();
-?>
